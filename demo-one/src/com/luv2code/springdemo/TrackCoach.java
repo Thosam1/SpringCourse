@@ -23,4 +23,14 @@ public class TrackCoach implements Coach {
     }
 
 
+    // add an init method - when bean is created
+    public void doMyStartupStuff() {
+        System.out.println("TrackCoach: inside method doMyStartupStuff");
+    }
+
+
+    // add a destroy method - when bean is destroyed
+    public void doMyCleanupStuffYoYo() {
+        System.out.println("TrackCoach: inside method doMyCleanupStuffYoYo");
+    }
 }
