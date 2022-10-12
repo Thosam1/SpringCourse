@@ -10,13 +10,22 @@ import org.springframework.stereotype.Component;
 public class TennisCoach implements Coach {
 
     @Autowired
-    @Qualifier("randomFortuneService")
+    @Qualifier("happyFortuneService")
     private FortuneService fortuneService;
 
     // define a default constructor
     public TennisCoach() {
         System.out.println(">> TennisCoach: inside default constructor");
     }
+
+    // define my init method
+    public void doMyStartupStuff() {
+        System.out.println("");
+    }
+
+    // define my destroy method
+
+
 
 //    // define a setter method
 //    @Autowired

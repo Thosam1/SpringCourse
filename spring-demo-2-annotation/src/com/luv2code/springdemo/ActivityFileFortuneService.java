@@ -20,31 +20,31 @@ public class ActivityFileFortuneService implements FortuneService {
     // create a random number generator
     private Random myRandom = new Random();
 
-    // constructor
-    public ActivityFileFortuneService() {
-         URL url = getClass().getResource("b.xml");
-        File theFile = new File(fileName);
-
-        System.out.println("Reading fortunes from file: " + theFile);
-        System.out.println("File exists: " + theFile.exists());
-
-        // initialize array list
-        theFortunes = new ArrayList<String>();
-
-        // read fortunes from file
-        try (BufferedReader br = new BufferedReader(
-                new FileReader(theFile))) {
-
-            String tempLine;
-
-            while ((tempLine = br.readLine()) != null) {
-                theFortunes.add(tempLine);
-            }
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+//    // constructor
+//    public ActivityFileFortuneService() {
+//        URL url = getClass().getResource(fileName);
+//        File theFile = new File(String.valueOf(url));
+//
+//        System.out.println("Reading fortunes from file: " + theFile);
+//        System.out.println("File exists: " + theFile.exists());
+//
+//        // initialize array list
+//        theFortunes = new ArrayList<String>();
+//
+//        // read fortunes from file
+//        try (BufferedReader br = new BufferedReader(
+//                new FileReader(theFile))) {
+//
+//            String tempLine;
+//
+//            while ((tempLine = br.readLine()) != null) {
+//                theFortunes.add(tempLine);
+//            }
+//
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//    }
 
     @Override
     public String getFortune() {
