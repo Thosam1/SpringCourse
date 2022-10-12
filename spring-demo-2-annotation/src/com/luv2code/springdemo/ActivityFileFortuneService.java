@@ -22,7 +22,7 @@ public class ActivityFileFortuneService implements FortuneService {
 
     // constructor
     public ActivityFileFortuneService() {
-        URL url = getClass().getResource("b.xml");
+         URL url = getClass().getResource("b.xml");
         File theFile = new File(fileName);
 
         System.out.println("Reading fortunes from file: " + theFile);
